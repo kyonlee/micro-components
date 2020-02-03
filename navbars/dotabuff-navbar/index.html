@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<title>Dotabuff Navbar</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="nav-wrapper">
+					<ul class="left menu">
+						<a class="logo" href="#">DOTABUFF</a>
+						<li class="teal" id="pro-curcuit">Pro Circuit</li>
+						<li class="teal">Esports</li>
+						<li class="hover-red">Heroes</li>
+						<li class="hover-red">Items</li>
+						<li class="hover-red">Players</li>
+						<li class="hover-red">Matches</li>
+						<li class="hover-red">Blog</li>
+						<li class="hover-red">Forums</li>
+						<li class="plus">Plus</li>
+					</ul>
+					<ul class="right menu">
+						<li class="search">
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</li>
+						<li><i class="fa fa-steam" aria-hidden="true"></i> Sign In</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="sub-menu" id="pro-curcuit-sub">
+				<ul class="menu">
+					<li>Pro Circuit</li>
+					<li>Team Standings</li>
+					<li>Schedule</li>
+					<li>Events</li>
+					<li>Results</li>
+					<li>2017 - 2018 Season</li>
+				</ul>
+			</div>
+			<div class="sub-menu esports-sub">
+				<ul class="menu">
+					<li>Esports</li>
+					<li>Clips<sup>NEW!</sup></li>
+					<li>Series</li>
+					<li>Scores</li>
+					<li>Leagues</li>
+					<li>Players</li>
+					<li>Teams</li>
+					<li>Matches</li>
+				</ul>
+			</div>
+			<div class="sub-menu heroes-sub">
+				<ul class="menu">
+					<li>All Heroes</li>
+					<li>Meta</li>
+					<li>Trends</li>
+					<li>Lanes</li>
+					<li>Most Played</li>
+					<li>Win Rate</li>
+					<li>Game Impact</li>
+					<li>Economy</li>
+					<li>Farm</li>
+					<li>Damage and Healing</li>
+				</ul>
+			</div>
+			<div class="sub-menu items-sub">
+				<ul class="menu">
+					<li>Most Used</li>
+					<li>Win Rate</li>
+					<li>Game Impact</li>
+					<li>Economy</li>
+					<li>Cosmetics</li>
+				</ul>
+			</div>
+			<div class="sub-menu players-sub">
+				<ul class="menu">
+					<li>Verified</li>
+					<li>Ranked Leaderboard<sup>NEW!</sup></li>
+					<li>Achievements</li>
+					<li>Highest Win Rate</li>
+					<li>Most Matches Played</li>
+					<li>Time Spent Playing</li>
+				</ul>
+			</div>
+			<div class="sub-menu matches-sub">
+				<ul class="menu">
+					<li class="teal">Live Matches</li>
+					<li class="teal">Recent Esports Matches</li>
+					<li>Recent Matches</li>
+					<li>Siltbreaker</li>
+					<li>Dark Moon</li>
+				</ul>
+			</div>
+		</header>
+	</body>
+	<script>
+		function isHover(e) {
+			return e.parentElement.querySelector(':hover') === e;
+		}
+
+		var proCurcuit = document.getElementById('pro-curcuit');
+		var proCurcuitSub = document.getElementById('pro-curcuit-sub');
+
+		document.addEventListener('mousemove', function checkHover() {
+			var hovered = isHover(proCurcuit);
+			var subHover = isHover(proCurcuitSub);
+			if (hovered || subHover) {
+				proCurcuitSub.style.visibility = 'visible';
+				// checkHover.hovered = hovered;
+			} else {
+				proCurcuitSub.style.visibility = 'hidden';
+			}
+		});
+	</script>
+</html>
