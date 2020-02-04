@@ -14,14 +14,16 @@ body {
 
 /* Navbar */
 
-nav {
+header {
 	background-color: #232e39;
-	color: #ffffff;
 }
 
-.nav-wrapper {
+nav {
+	/* background-color: #232e39; */
+	color: #ffffff;
 	display: flex;
-	max-width: 972px;
+	width: 972px;
+	max-width: 100%;
 	margin: 0 auto;
 	justify-content: space-between;
 }
@@ -72,23 +74,4 @@ nav {
 
 .menu .search {
 	padding: 0 1.2rem;
-}
-
-/* Secondary Menu */
-.sub-menu {
-	background-color: #2d3640;
-	visibility: hidden;
-}
-
-.sub-menu .menu {
-	max-width: 972px;
-	margin: 0 auto;
-}
-
-.sub-menu .menu li:hover {
-	color: #ffffff;
-}
-
-.sub-menu .menu sup {
-	color: #a9cf54;
 }

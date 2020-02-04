@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background-color: #131e30;
+}
+
+header {
+	background-color: rgba(0, 0, 0, 0.3);
+
+	color: #dfe0e2;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 3.5;
+}
+
+.menu.left li {
+	padding-left: 0.7em;
+	padding-right: 0.7em;
+}
+
+.menu li:hover {
+	color: #545b64;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.menu.right li {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/* || Hamburger Menu Icon */
+
+.menu .hamburger-menu-icon {
+	padding: 15px 11px;
+	margin: 4px;
+	border-radius: 50%;
+}
+
+.hamburger-menu-icon:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: 0.5s;
+}
+
+.hamburger-menu-icon div:nth-child(1),
+.hamburger-menu-icon div:nth-child(2),
+.hamburger-menu-icon div:nth-child(3) {
+	height: 2px;
+	margin: 3px;
+	width: 18px;
+	background-color: #dfe0e2;
+}
+
+/* || Nav Search */
+
+.nav-search {
+	color: #dfe0e2;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: url(./assets/search.png);
+	background-repeat: no-repeat;
+	background-size: 1em;
+	border: none;
+	padding-left: 25px;
+}
+
+.nav-search:focus {
+	outline: none;
+}
+
+/* || Setting Icon */
+
+.menu.right .setting-icon {
+	font-size: 2.4rem;
+	line-height: 2.33;
+	border-radius: 50%;
+}
+
+.menu.right .setting-icon:hover {
+	color: #dfe0e2;
+}

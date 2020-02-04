@@ -15,28 +15,35 @@
 	<body>
 		<header>
 			<nav>
-				<div class="nav-wrapper">
-					<ul class="left menu">
-						<a class="logo" href="#">DOTABUFF</a>
-						<li class="teal" id="pro-curcuit">Pro Circuit</li>
-						<li class="teal">Esports</li>
-						<li class="hover-red">Heroes</li>
-						<li class="hover-red">Items</li>
-						<li class="hover-red">Players</li>
-						<li class="hover-red">Matches</li>
-						<li class="hover-red">Blog</li>
-						<li class="hover-red">Forums</li>
-						<li class="plus">Plus</li>
-					</ul>
-					<ul class="right menu">
-						<li class="search">
-							<i class="fa fa-search" aria-hidden="true"></i>
-						</li>
-						<li><i class="fa fa-steam" aria-hidden="true"></i> Sign In</li>
-					</ul>
-				</div>
+				<ul class="left menu">
+					<a class="logo" href="#">DOTABUFF</a>
+					<li class="teal">
+						Pro Circuit
+						<!-- <ul class="sub-menu menu">
+							<li>Pro Circuit</li>
+							<li>Team Standings</li>
+							<li>Schedule</li>
+							<li>Events</li>
+							<li>Results</li>
+						</ul> -->
+					</li>
+					<li class="teal">Esports</li>
+					<li class="hover-red">Heroes</li>
+					<li class="hover-red">Items</li>
+					<li class="hover-red">Players</li>
+					<li class="hover-red">Matches</li>
+					<li class="hover-red">Blog</li>
+					<li class="hover-red">Forums</li>
+					<li class="plus">Plus</li>
+				</ul>
+				<ul class="right menu">
+					<li class="search">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</li>
+					<li><i class="fa fa-steam" aria-hidden="true"></i> Sign In</li>
+				</ul>
 			</nav>
-			<div class="sub-menu" id="pro-curcuit-sub">
+			<!-- <div class="sub-menu" id="pro-curcuit-sub">
 				<ul class="menu">
 					<li>Pro Circuit</li>
 					<li>Team Standings</li>
@@ -46,7 +53,7 @@
 					<li>2017 - 2018 Season</li>
 				</ul>
 			</div>
-			<div class="sub-menu esports-sub">
+			<div class="sub-menu" id="esports-sub">
 				<ul class="menu">
 					<li>Esports</li>
 					<li>Clips<sup>NEW!</sup></li>
@@ -99,26 +106,63 @@
 					<li>Siltbreaker</li>
 					<li>Dark Moon</li>
 				</ul>
-			</div>
+			</div> -->
 		</header>
 	</body>
 	<script>
-		function isHover(e) {
-			return e.parentElement.querySelector(':hover') === e;
-		}
+		// function isHover(e) {
+		// 	return e.parentElement.querySelector(':hover') === e;
+		// }
 
-		var proCurcuit = document.getElementById('pro-curcuit');
-		var proCurcuitSub = document.getElementById('pro-curcuit-sub');
+		// function checkHover(main, sub) {
+		// 	var hovered = isHover(main);
+		// 	var subHovered = isHover(sub);
 
-		document.addEventListener('mousemove', function checkHover() {
-			var hovered = isHover(proCurcuit);
-			var subHover = isHover(proCurcuitSub);
-			if (hovered || subHover) {
-				proCurcuitSub.style.visibility = 'visible';
-				// checkHover.hovered = hovered;
-			} else {
-				proCurcuitSub.style.visibility = 'hidden';
-			}
-		});
+		// 	if (hovered || subHovered) {
+		// 		sub.style.visibility = 'visible';
+		// 	} else {
+		// 		sub.style.visibility = 'hidden';
+		// 	}
+		// }
+
+		// // Sub menu for Pro-Curcuit
+		// document.addEventListener('mousemove', () => {
+		// 	checkHover(
+		// 		document.getElementById('pro-curcuit'),
+		// 		document.getElementById('pro-curcuit-sub')
+		// 	);
+		// });
+
+		// // Sub menu for Esports
+		// document.addEventListener('mousemove', () => {
+		// 	checkHover(
+		// 		document.getElementById('esports'),
+		// 		document.getElementById('esports-sub')
+		// 	);
+		// });
+
+		// // Sub menu for Pro-Curcuit
+		// document.addEventListener('mousemove', () => {
+		// 	checkHover(
+		// 		document.getElementById('pro-curcuit'),
+		// 		document.getElementById('pro-curcuit-sub')
+		// 	);
+		// });
+
+		// // Sub menu for Pro-Curcuit
+		// document.addEventListener('mousemove', () => {
+		// 	checkHover(
+		// 		document.getElementById('pro-curcuit'),
+		// 		document.getElementById('pro-curcuit-sub')
+		// 	);
+		// });
+
+		// // Sub menu for Pro-Curcuit
+		// document.addEventListener('mousemove', () => {
+		// 	checkHover(
+		// 		document.getElementById('pro-curcuit'),
+		// 		document.getElementById('pro-curcuit-sub')
+		// 	);
+		// });
 	</script>
 </html>
