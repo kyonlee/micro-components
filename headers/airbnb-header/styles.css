@@ -1,0 +1,57 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-weight: 400;
+}
+
+body {
+	font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+/* Header background image */
+
+header {
+	height: 100vh;
+	background-image: url(./assets/seoul.jpg);
+	background-size: cover;
+}
+
+/* Navbar */
+
+nav {
+	display: flex;
+	color: rgb(255, 255, 255);
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-size: 3.4rem;
+	padding: 0 24px;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+.menu {
+	display: flex;
+	list-style: none;
+	font-size: 1.4rem;
+	line-height: 5.714;
+	margin: 0;
+}
+
+.menu li {
+	padding: 0 8px;
+	margin: 0 8px;
+	border-bottom: solid 2px rgba(255, 255, 255, 0);
+}
+
+.menu li:hover {
+	cursor: pointer;
+	border-bottom: solid 2px rgb(255, 255, 255);
+}
